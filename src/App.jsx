@@ -19,8 +19,8 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/auth" element={<Home />} />
+          <Route path="/auth/welcome" element={<Welcome />} />
         </Routes>
       </BrowserRouter>
       <Toaster />
