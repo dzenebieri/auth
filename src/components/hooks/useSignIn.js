@@ -14,7 +14,7 @@ export function useSignIn() {
     onSuccess: (data) => {
       authedUser(data.user);
       queryClient.setQueryData(['user'], data.user);
-      navigate('/welcome', { replace: true });
+      navigate('/auth/welcome', { replace: true });
     },
     onError: (err) => {
       console.log('ERROR', err);

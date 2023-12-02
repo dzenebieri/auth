@@ -14,7 +14,7 @@ export default function SignOutBN() {
 
   const handleSignOut = async () => {
     await signOutFun();
-    navigate('/');
+    navigate('/auth');
   };
 
   return (

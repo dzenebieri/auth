@@ -25,7 +25,7 @@ export default function Welcome() {
         }
 
         if (!data?.user) {
-          navigate('/');
+          navigate('/auth');
           return;
         }
 
@@ -33,7 +33,7 @@ export default function Welcome() {
         authedUser(data.user);
       } catch (error) {
         console.error(error);
-        navigate('/');
+        navigate('/auth');
       }
     };
 
