@@ -41,7 +41,7 @@ button:focus {
 }
 .fb button {
   height: 52px;
-  width: 364px;
+  width: 300px;
   display: flex;
   font-size: 14px;
   align-items: center;
@@ -50,6 +50,11 @@ button:focus {
   text-transform: none !important;
   background-color: #0866ff !important;
   border: calc(0.06887vw + 0.67769px) solid #0866ff !important;
+}
+@media (min-width: 640px) {
+  .fb button {
+    width: 364px;
+  }
 }
 .fb button:hover {
   opacity: 0.9;

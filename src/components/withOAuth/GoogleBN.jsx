@@ -14,7 +14,7 @@ const GoogleBN = () => {
         onRequest={signInWithGoogle}
         buttonText="Continue with Google"
         clientId="623333799087-mr69ufuog1ddmua3bsgltcm6e28clg44.apps.googleusercontent.com"
-        className="flex h-[52px] w-[364px] items-center justify-center !rounded-md bg-white opacity-100"
+        className="flex h-[52px] w-[300px] items-center justify-center !rounded-md bg-white opacity-100 sm:w-[364px]"
       />
     </div>
   );

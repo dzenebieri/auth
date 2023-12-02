@@ -39,8 +39,8 @@ export default function SignUp() {
       </div>
       {signUpShow && (
         <div className="fixed left-2/4 top-2/4 max-w-full -translate-x-2/4 -translate-y-2/4 transition-all">
-          <div className="cc h-[551px] w-[432px] max-w-full rounded-lg bg-neutral-900">
-            <header className="mb-4 h-[82px] w-[432px] border-b border-neutral-800 pb-[10px] ">
+          <div className="cc h-[480px] w-[320px] max-w-full rounded-lg bg-neutral-900 sm:h-[551px] sm:w-[432px]">
+            <header className="mb-4 h-[82px] w-[320px] border-b border-neutral-800 pb-[10px] sm:w-[432px] ">
               <button className="absolute right-4 top-4 w-6">
                 <img src={X} alt="Elon -.- who" onClick={handleClick} />
               </button>
@@ -68,7 +68,7 @@ export default function SignUp() {
                   {...register('username', {
                     required: 'Name is required',
                   })}
-                  className="h-[52px] w-[364px] rounded-md border border-neutral-800 px-4 py-3.5 text-sm font-semibold capitalize placeholder:text-sm placeholder:text-neutral-700"
+                  className="h-[52px] w-[300px] rounded-md border border-neutral-800 px-4 py-3.5 text-sm font-semibold capitalize placeholder:text-sm placeholder:text-neutral-700 sm:w-[364px]"
                 />
               </ErrorIN>
               <ErrorIN error={errors?.email?.message}>
@@ -83,7 +83,7 @@ export default function SignUp() {
                       value: /\S+@\S+\.\S+/,
                     },
                   })}
-                  className="h-[52px] w-[364px] rounded-md border border-neutral-800 px-4 py-3.5 text-sm placeholder:text-sm placeholder:text-neutral-700"
+                  className="h-[52px] w-[300px] rounded-md border border-neutral-800 px-4 py-3.5 text-sm placeholder:text-sm placeholder:text-neutral-700 sm:w-[364px]"
                 />
               </ErrorIN>
               <ErrorIN error={errors?.password?.message}>
@@ -98,7 +98,7 @@ export default function SignUp() {
                       value: 8,
                     },
                   })}
-                  className="h-[52px] w-[364px] rounded-md border border-neutral-800 px-4 py-3.5 text-sm font-bold placeholder:text-sm placeholder:font-normal placeholder:text-neutral-700"
+                  className="h-[52px] w-[300px] rounded-md border border-neutral-800 px-4 py-3.5 text-sm font-bold placeholder:text-sm placeholder:font-normal placeholder:text-neutral-700 sm:w-[364px]"
                 />
               </ErrorIN>
               <ErrorIN error={errors?.confirmPassword?.message}>
@@ -111,7 +111,7 @@ export default function SignUp() {
                     required: "Passwords don't match",
                     validate: (value) => value === getValues().password,
                   })}
-                  className="h-[52px] w-[364px] rounded-md border border-neutral-800 px-4 py-3.5 text-sm font-bold placeholder:text-sm placeholder:font-normal placeholder:text-neutral-700"
+                  className="h-[52px] w-[300px] rounded-md border border-neutral-800 px-4 py-3.5 text-sm font-bold placeholder:text-sm placeholder:font-normal placeholder:text-neutral-700 sm:w-[364px]"
                 />
               </ErrorIN>
               <SignUpBN type="secondary">Sign Up</SignUpBN>
