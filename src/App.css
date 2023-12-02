@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:
+    Söhne,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    Ubuntu,
+    Cantarell,
+    'Noto Sans',
+    sans-serif,
+    'Helvetica Neue',
+    Arial,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
+  color: white;
+  background-color: rgb(36, 37, 38);
+}
+input,
+button,
+input:focus,
+button:focus {
+  outline: none;
+  background: none;
+}
+.fb i {
+  font-size: 18px;
+  margin-right: 4px !important;
+}
+.fb button {
+  height: 52px;
+  width: 364px;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px !important;
+  text-transform: none !important;
+  background-color: #0866ff !important;
+  border: calc(0.06887vw + 0.67769px) solid #0866ff !important;
+}
+.fb button:hover {
+  opacity: 0.9;
+}
+.Go div,
+.Go span {
+  padding: 0 !important;
+  font-weight: 600 !important;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 5px solid rgb(62, 207, 142);
+  animation: rotation 1s linear infinite;
+  border-bottom-color: transparent;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
